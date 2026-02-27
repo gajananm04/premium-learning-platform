@@ -17,7 +17,7 @@ export default function Navbar({ onMenuClick }: NavbarProps) {
       className="sticky top-0 z-30 bg-white/80 backdrop-blur-lg border-b border-border"
     >
       <div className="flex items-center justify-between px-4 lg:px-8 py-4">
-        <button onClick={onMenuClick} className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors">
+        <button onClick={onMenuClick} className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
           <Menu className="w-6 h-6" />
         </button>
         <div className="hidden lg:block">

@@ -46,7 +46,7 @@ export default function Login() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] }
+      transition: { duration: 0.4, ease: 'easeInOut' }
     }
   };
 
@@ -55,7 +55,7 @@ export default function Login() {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] }
+      transition: { duration: 0.6, ease: 'easeInOut' }
     }
   };
 
@@ -217,16 +217,14 @@ export default function Login() {
 
               <div className="mt-6 text-center">
                 <p className="text-sm text-indigo-100">
-                  Don't have an account?
+                  Don't have an account?{' '}
+                  <button
+                    onClick={() => navigate('/signup')}
+                    className="text-white font-semibold hover:underline"
+                  >
+                    Sign up
+                  </button>
                 </p>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => navigate('/signup')}
-                  className="mt-2 w-full rounded-xl border border-white/30 bg-white/10 backdrop-blur-sm py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-white/20"
-                >
-                  Sign Up
-                </motion.button>
               </div>
 
               <div className="mt-8 pt-6 border-t border-white/20">

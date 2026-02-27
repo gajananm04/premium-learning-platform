@@ -15,6 +15,9 @@ export default {
         border: '#E5E7EB',
       },
       fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       animation: {
         'float': 'float 20s ease-in-out infinite',
         'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
